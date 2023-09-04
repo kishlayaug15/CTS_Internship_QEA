@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Search-In-GSD-Test(failed)">
+    <classes>
+      <class name="test.GSD">
+        <methods>
+          <include name="userProfile"/>
+          <include name="openBrowser"/>
+          <include name="verifyTitleonects"/>
+          <include name="getGsd"/>
+          <include name="randomFirstCountrySelect"/>
+          <include name="getLanguage"/>
+          <include name="randomSecondCountrySelect"/>
+          <include name="openOneCognizant"/>
+          <include name="reportInitialize"/>
+          <include name="setPage"/>
+          <include name="handleWindow"/>
+          <include name="verifyTitleMessage"/>
+          <include name="printIndiaGSDSupport"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- test.GSD -->
+    </classes>
+  </test> <!-- Search-In-GSD-Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
