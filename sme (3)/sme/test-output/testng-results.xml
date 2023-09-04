@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="12" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-04T08:02:34Z" name="Default suite" finished-at="2023-09-04T08:03:52Z" duration-ms="78099">
+    <groups>
+    </groups>
+    <test started-at="2023-09-04T08:02:34Z" name="Default test" finished-at="2023-09-04T08:03:52Z" duration-ms="78099">
+      <class name="com.cts.sme.AllTest">
+        <test-method signature="driverCall()[pri:1, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:02:34Z" name="driverCall" finished-at="2023-09-04T08:02:35Z" duration-ms="1449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverCall -->
+        <test-method signature="openingUrl()[pri:2, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:02:35Z" name="openingUrl" finished-at="2023-09-04T08:02:37Z" duration-ms="1875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openingUrl -->
+        <test-method signature="clickingUpcomingBikes()[pri:3, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:02:37Z" name="clickingUpcomingBikes" finished-at="2023-09-04T08:02:45Z" duration-ms="7740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickingUpcomingBikes -->
+        <test-method signature="selectingManufacturer()[pri:4, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:02:45Z" name="selectingManufacturer" finished-at="2023-09-04T08:02:46Z" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectingManufacturer -->
+        <test-method signature="clickViewMore()[pri:5, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:02:46Z" name="clickViewMore" finished-at="2023-09-04T08:02:46Z" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickViewMore -->
+        <test-method signature="printingDetails()[pri:6, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:02:46Z" name="printingDetails" finished-at="2023-09-04T08:02:46Z" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printingDetails -->
+        <test-method signature="clickingUsedCars()[pri:8, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:02:46Z" name="clickingUsedCars" finished-at="2023-09-04T08:02:47Z" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickingUsedCars -->
+        <test-method signature="clickingPopularModels()[pri:9, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:02:47Z" name="clickingPopularModels" finished-at="2023-09-04T08:03:07Z" duration-ms="20312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickingPopularModels -->
+        <test-method signature="clickLogIn()[pri:10, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:03:07Z" name="clickLogIn" finished-at="2023-09-04T08:03:11Z" duration-ms="3571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickLogIn -->
+        <test-method signature="clickSignIn()[pri:11, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:03:11Z" name="clickSignIn" finished-at="2023-09-04T08:03:31Z" duration-ms="20104" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="myModal3-modal-content"]/div[1]/div/div[2]/div[4]/div[2]"}
+  (Session info: chrome=116.0.5845.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-DNIB9THI', ip: '192.168.1.24', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\STUTIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15a76966210dfc5915ee1f9a2e7987a5
+*** Element info: {Using=xpath, value=//*[@id="myModal3-modal-content"]/div[1]/div/div[2]/div[4]/div[2]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="myModal3-modal-content"]/div[1]/div/div[2]/div[4]/div[2]"}
+  (Session info: chrome=116.0.5845.141)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-DNIB9THI', ip: '192.168.1.24', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.141, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\STUTIK~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58670}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 15a76966210dfc5915ee1f9a2e7987a5
+*** Element info: {Using=xpath, value=//*[@id="myModal3-modal-content"]/div[1]/div/div[2]/div[4]/div[2]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at Pages.LoginPage.clickGoogleSignIn(LoginPage.java:35)
+at com.cts.sme.AllTest.clickSignIn(AllTest.java:70)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickSignIn -->
+        <test-method signature="errorMessageDisplay()[pri:12, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:03:31Z" name="errorMessageDisplay" finished-at="2023-09-04T08:03:51Z" duration-ms="20239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorMessageDisplay -->
+        <test-method signature="capturingScreenShot()[pri:13, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:03:51Z" name="capturingScreenShot" finished-at="2023-09-04T08:03:51Z" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- capturingScreenShot -->
+        <test-method signature="driverClose()[pri:14, instance:com.cts.sme.AllTest@117e949d]" started-at="2023-09-04T08:03:51Z" name="driverClose" finished-at="2023-09-04T08:03:52Z" duration-ms="500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverClose -->
+      </class> <!-- com.cts.sme.AllTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

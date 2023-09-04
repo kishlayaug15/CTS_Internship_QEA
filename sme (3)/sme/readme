@@ -1,0 +1,71 @@
+*********************************************************************HACKATHON PROJECT DESCRIPTION**************************************************************************
+                                                    
+                                                 
+Project Name: Identify New Bikes
+Name: Kishlay Kumar
+
+Problem Statement : 
+
+Display upcoming bikes details like, bike name, its price and expected launch date in India
+1. Manufacturer should be Honda.
+2. Bike price should be less than 4Lac
+
+Suggested Site: ZigWheels.com
+
+Detailed Description: Hackathon Project
+
+1.Opening the Browser.
+2.Launching the Zigwheels Site.
+3.To get the details such as prices for Manufacturer Honda on the Upcoming Bikes under 4 Lakh.
+4.Printing the received details on console. 
+5.After that, Used Cars button will be located from Zigwheels site.
+6.Then it will be navigated to city Chennai. 
+7.To locate the Popular Models with the help of XPath.
+8.Fetching & printing the details on Console. 
+9.Creating the report for each scenario and opening it as interactive HTML page. 
+10.Closing the Browser.
+
+
+Key Automation Scope:
+
+Handling windows
+Filling simple form, Capture warning message
+Extract menu items & store in collections
+Navigating back to home page
+
+
+**********************************************************STEPS TO EXECUTE*************************************************************
+
+-unzip the folder
+-On eclipse, goto file->open file->select the directory->click on directory-> click on finish
+-Copy the same version of chrome.exe driver present in the PC in the Driver folder.
+-Copy the same version of microsoftedge.exe driver present in the PC in the Driver folder.
+-Copy the same version of geckodriver.exe driver present in the PC in the Driver folder. 
+-Now go to the TestNG.xml file and run as TestNGSuite.
+-Now the file will Execute and we get the expected output as shown below.
+
+*******************************************************FILES DESCRIPTION**************************************************************
+
+1.src/main/java - There is one package present in this folder. The package contains below:
+     ->config.properties: In this File we have to give from user to use which browser chrome/firefox/microsoftedge etc. 
+     ->Base:This is our main project file in which we Firstly invoke the selected browser and 
+          Open the "New Cars & Bikes, Prices, News, Reviews, Buy & Sell Used Cars - ZigWheels.com" page (https://zigwheels.com/),reusable method for reports and closing the browser
+     ->ChennaiUsedCars: This file extends Base.java where the methods are present which will contains the code for clicking the used cars options & fetching the details of the popular cars in chennai. 
+     ->HomePage: This file also extends Base.java where the methods are present which will contain the code for fetching the details of Upcoming Bikes and its Manufacturer for Smoke Testing.
+     ->HondaDetails: This file contains the methods for getting the details of the upcoming Honda Bikes, its Prices and printing these details on console.
+     ->LoginPage: This file contains a class for Logging in the Zigwheels site using Google Signin, Capturing Error Message.
+     
+2.src/test/java- There is one package in this folder.
+	 ->com.cts.sme: This contains two classes.
+     	->AllTest: This contains all the testcases for the methods to run the test.
+     	->SmokeTest: This contains all the testcases for checking Smoke Testing.
+3.JRE System Library: In this File we have all dependencies of JAR.files.         
+4.Maven Dependencies: In this File we have all the directory on the local machine, where all the project artifacts are stored. When a Maven build is executed,
+  Maven automatically downloads all the dependency jars into the local repository. Usually, this directory is named.
+5.Drivers- In this folder, the chormedriver, edgedriver are present.
+6.ScreenShot: This folder is for the screenshots captured in the runtime.
+7.Report: In this folder Report.html is present.
+8.test-output: In this folder there are many files showing Emailable Report, JUnit Report, etc.
+9.pom.xml: The pom.xml file contains information of project and configuration information for the maven to build the project such as dependencies,
+   build directory, source directory, test source directory, plugin, goals etc. Maven reads the pom.xml file, then executes the goal.
+10.testng.xml: This converts the maven project to TestNG Suite. And execute the classes one after other.
