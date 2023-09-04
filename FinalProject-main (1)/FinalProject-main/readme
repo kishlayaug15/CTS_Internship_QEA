@@ -1,0 +1,75 @@
+*****************************************************PROJECT DESCRIPTION*****************************************************************
+                                                    [QEA23QE006-GSD]
+                                                 
+
+Team Members:
+1. Meghana R
+2. Priyanaka Kumari
+3. Baibhav raj
+4. Kishlay Kumar
+
+Problem Statement : To check the GSD supports provided for different countries. 
+1. To navigate to the Be.Cognizant page and get the user details.
+2. To navigate to the OneCognizant page and search for GSD
+3. To Check if India and English are selected as default dropdown in GSD page.
+4. To get the details of all the Live support options for India.
+5. To get the details of all the Live support options for any other countries.
+
+Detailed Description:  
+
+Detailed Description: Main Project
+
+1.Login into Be.cognizant using valid credentials
+2.Verify that the user name is correct
+3.Take a screenshot of our profile page
+4.Print the name of account in Be Cognizant Home Page
+5.Search for gsd in search box
+6.Click on Live Support- GSD Application
+7.Navigate to the GSD page
+8.Check if India and English are selected as default dropdown
+9.Get the details of support for India
+10.Randomly select two other countries from the country dropdown and fetch the details
+11.Close the Browser
+
+
+Key Automation Scope:
+
+Navigate to Be Cognizant.com page
+Navigate to GSD application
+Fetch the details of the page and the tool tips of each supports.
+
+
+**********************************************************STEPS TO EXECUTE*************************************************************
+
+-unzip the folder
+-On eclipse, goto file->open file->select the directory->click on directory-> click on finish
+-Copy the same version of chrome.exe driver present in the PC in the Driver folder.
+-Copy the same version of microsoftedge.exe driver present in the PC in the Driver folder.
+-Copy the same version of geckodriver.exe driver present in the PC in the Driver folder. 
+-Now go to the TestNG.xml file and run as TestNGSuite.
+-Now the file will Execute and we get the expected output as shown below.
+
+*******************************************************FILES DESCRIPTION**************************************************************
+
+1.src/main/java - There is one package present in this folder. The package contains below:
+     ->config.properties: In this File we have to give from user to use which browser chrome/firefox/microsoftedge etc. 
+     ->Driver:This is our main project file in which we Firstly invoke the selected browser and 
+          Open the Be.cognizant page (https://be.cognizant.com/),reusable method for reports and closing the browser
+     ->OneCognizant: This file extends Driver.java where the methods are present which will contains the code for fetching user details and navigating to OneCognizant page 
+     ->GSD: This file also extends Driver.java where the methods are present which will contain the code for fetching the details of GSD supports for India and other countries.
+     ->POM: This file contains the resuable code for calling methods in the other pages.
+     ->Screenshot: This file contains a class for screenshot which is used to capture Screensho
+     ->ExentReport: In this file we have a class ExtentReportManager which is used for extent reports.
+     
+2.src/test/java- There is one file in this folder.
+     ->TestAll: This contains all the testcases for the methods to run the test.
+3.JRE System Library: In this File we have all dependencies of JAR.files.         
+4.Maven Dependencies: In this File we have all the directory on the local machine, where all the project artifacts are stored. when a Maven build is executed,
+  Maven automatically downloads all the dependency jars into the local repository. Usually, this directory is named.
+5.Drivers- In this folder, the chorme driver,microsoftedge and gecko driver are present
+6.ExcelFiles: It contains an Excel file Data.xls
+7.ScreenShot:This folder is for the screenshots captured in the runtime.
+8.Report:In this folder reports.html is present.
+9.test-output:In this folder 3 files are there
+10.pom.xml: The pom.xml file contains information of project and configuration information for the maven to build the project such as dependencies,
+   build directory, source directory, test source directory, plugin, goals etc. Maven reads the pom.xml file, then executes the goal.
